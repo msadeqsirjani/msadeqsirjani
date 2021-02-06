@@ -15,7 +15,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://twitter.com/m_sadeq_sirjani" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="m_sadeq_sirjani" height="30" width="40" /></a>
+<a href="https://twitter.com/msadeqsirjani" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="msadeqsirjani" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/https://linkedin.com/li/moahammad-sadeq-sirjani" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="https://linkedin.com/li/moahammad-sadeq-sirjani" height="30" width="40" /></a>
 <a href="https://stackoverflow.com/users/https://stackoverflow.com/users/story/11507996" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" alt="https://stackoverflow.com/users/story/11507996" height="30" width="40" /></a>
 <a href="https://instagram.com/mohammad.sadeq.sirjani" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="mohammad.sadeq.sirjani" height="30" width="40" /></a>
