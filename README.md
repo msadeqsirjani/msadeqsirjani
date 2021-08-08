@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Mohammad Sadeq Sirjani</h1>
-<h3 align="center">A Junior Asp Dotnet Core Developer from Iran</h3>
+<h3 align="center">A .Net Core Developer from Iran</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=msadeqsirjani&label=Profile%20views&color=0e75b6&style=flat" alt="msadeqsirjani" /> </p>
 
