@@ -2,7 +2,7 @@
 
 <h3><samp><strong>Mohammad Sadeq Sirjani</strong> 👋 </samp></h3>
 
-<p> <samp>B.Sc & M.Sc student in Computer Engineering, <br> Software Engineer. </samp></p>
+<p> <samp>Bachelor's student in Computer Engineering at FUM, <br> Software Engineer at Rayvarz Software Engineering Company. </samp></p>
 
   <br>
   
