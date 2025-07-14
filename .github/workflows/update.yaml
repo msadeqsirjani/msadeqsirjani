@@ -16,23 +16,26 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 1
-      - name: Get Python 3.8
-        uses: actions/setup-python@v2
+      - name: Get Python 3.11
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.8'
+          python-version: '3.11'
+      - name: Show Python version
+        run: python --version
       - name: Install dependencies
         run: |
-          python -m pip install python-dateutil requests
-      - name: Update README file
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Update README and SVGs
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           USER_NAME: ${{ secrets.USER_NAME }}
         run: python update_readme.py
-      - name: Commit
+      - name: Commit SVG and README changes
         run: |-
-          git add .
-          git diff
+          git add README.md docs/dark_mode.svg docs/light_mode.svg
+          git diff --cached
           git config --global user.email "github-actions-bot@msadeqsirjani.github.io"
           git config --global user.name "msadeqsirjani/GitHub-Actions-Bot"
-          git commit -m "update: README.md" -a || echo "No changes to commit"
+          git commit -m "Automated update: README and SVG stats" || echo "No changes to commit"
           git push
