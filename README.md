@@ -1,4 +1,4 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/msadeqsirjani/msadeqsirjani/refs/heads/master/docs/dark_mode.svg">
-  <img alt="Arian Boukani's GitHub Profile" src="https://raw.githubusercontent.com/msadeqsirjani/msadeqsirjani/refs/heads/master/docs/light_mode.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="[https://raw.githubusercontent.com/msadeqsirjani/msadeqsirjani/refs/heads/master/docs/dark_mode.svg](https://raw.githubusercontent.com/msadeqsirjani/msadeqsirjani/refs/heads/main/docs/dark_mode.svg)">
+  <img alt="Mohammad Sadegh Sirjani's GitHub Profile" src="[https://raw.githubusercontent.com/msadeqsirjani/msadeqsirjani/refs/heads/master/docs/light_mode.svg](https://raw.githubusercontent.com/msadeqsirjani/msadeqsirjani/refs/heads/main/docs/light_mode.svg)">
 </picture>
