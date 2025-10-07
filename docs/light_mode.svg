@@ -1,134 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="'Fira Code', 'JetBrains Mono', 'Cascadia Code', Consolas, monospace" width="975px" height="550px" font-size="16px">
-<defs>
-  <linearGradient id="lightBg" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
-    <stop offset="100%" style="stop-color:#f6f8fa;stop-opacity:1" />
-  </linearGradient>
-  <linearGradient id="accentGlowLight" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" style="stop-color:#ff7f50;stop-opacity:0.4" />
-    <stop offset="100%" style="stop-color:#007acc;stop-opacity:0.4" />
-  </linearGradient>
-  <filter id="glowLight">
-    <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
-    <feMerge>
-      <feMergeNode in="coloredBlur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
-</defs>
-<style>
-.keyColor {fill: #d73a49; font-weight: 600;}
-.valueColor {fill: #0366d6;}
-.accentText {fill: #005cc5; font-weight: 700;}
-.highlightColor {fill: #28a745;}
-.delColor {fill: #d32f2f;}
-.commentColor {fill: #6a737d;}
-text, tspan {white-space: pre;}
-.header {font-size: 28px; font-weight: 700; fill: #0366d6; filter: url(#glowLight);}
-.section-title {font-size: 18px; font-weight: 700; fill: #d73a49;}
-.divider {stroke: #e1e4e8; stroke-width: 2; opacity: 0.7;}
-</style>
-
-<rect width="975px" height="550px" fill="url(#lightBg)" rx="15"/>
-<rect x="5" y="5" width="965" height="540" fill="none" stroke="url(#accentGlowLight)" stroke-width="2" rx="13" opacity="0.5"/>
-
-<text x="15" y="30" fill="#24292e" class="ascii">
-    <tspan x="15" y="30">++====-=--+*=-----+**+-@%+--:-=#%**</tspan>
-    <tspan x="15" y="40">======-=--=*+=---:=+:=---++:-=+#%**</tspan>
-    <tspan x="15" y="50">=-=+==+=--+*+=-=:::*+*--=++:-+=#%#%</tspan>
-    <tspan x="15" y="60">+======-=-+*+=-+::++*++==+*:=+==+=*</tspan>
-    <tspan x="15" y="70">=-=*+++===+*+==+:#*##*#==-#=:==-=-=</tspan>
-    <tspan x="15" y="80">===***%=-=+*+==+***%#%+#==--*=-=-==</tspan>
-    <tspan x="15" y="90">=+=*@=+===+*+===%%##%%%@*+#**=-=+*=</tspan>
-    <tspan x="15" y="100">=+=#@*+=-=+*+=-=*%##@%#%%#@%##-+++=</tspan>
-    <tspan x="15" y="110">===#@%*+=--*===+#%##@@@%@@+*#+@-++=</tspan>
-    <tspan x="15" y="120">==+*=#*==+=*=-+***##%%@@@%#*@*@+++=</tspan>
-    <tspan x="15" y="130">==****+========*#*%%@@@@@#@%+@=++++</tspan>
-    <tspan x="15" y="140">+++#@=+===+--=+*%#%%@@@@@@@@*@%**+*</tspan>
-    <tspan x="15" y="150">+##*#+=====--**=#*#%@@@@@@@@%#%@*+*</tspan>
-    <tspan x="15" y="160">%#@+#***===-**+.-%%%%@@@@@@@@@@%#==</tspan>
-    <tspan x="15" y="170">@####**++===*#:+==%%%@@@@@@@@@@@*-=</tspan>
-    <tspan x="15" y="180">*+==*++#*+++=*..+=#+%%@%#%%%%@@#-=*</tspan>
-    <tspan x="15" y="190">*#+=++==+++:-=.=*=-*%%%*+-++#@%*:-*</tspan>
-    <tspan x="15" y="200">+*#*#:-==@+....=%:+##=*+=--=*#*+*++</tspan>
-    <tspan x="15" y="210">++++*%@%%@.....:%.+*--:----=+=--===</tspan>
-    <tspan x="15" y="220">**==#*@#@......=:-*::----====:-:=--</tspan>
-    <tspan x="15" y="230">%+*%%%*-%.......:**::=-:-==+=-=-=-=</tspan>
-    <tspan x="15" y="240">#**%##%#+.......+*+::-**=--=--=*---</tspan>
-    <tspan x="15" y="250">+*@@@@@%%*...::-*#+::-**@@+=:.-----</tspan>
-    <tspan x="15" y="260">++=#@@@@@%#-:-+%##+::-#@@%@*-..:--*</tspan>
-    <tspan x="15" y="270">=+**@%@@@@@#*+%%#*+:--*-%*#+*+-=--=</tspan>
-    <tspan x="15" y="280">===%*@%@@@@@%*+%%#+-=-==@%#=@#%*=-:</tspan>
-    <tspan x="15" y="290">==*+*%@@@@@@@%%%@%#+==#@@%+*#+-==+*</tspan>
-    <tspan x="15" y="300">++===*@%@@@@@@@@@@@+**%%+=+*##-+=++</tspan>
-    <tspan x="15" y="310">++=+=+*#@@@@@@@@@@@*@%@++-@%%%++=++</tspan>
-    <tspan x="15" y="320">**+==#+#@@@@@@@@@@@@@@@%=*@#####..=</tspan>
-    <tspan x="15" y="330">*++%+*%##@@@@@@@@@@@*%%+#@@%#%%##--</tspan>
-    <tspan x="15" y="340">%**++**%##@@@@@@@@@%#*:-#%*#####=#:</tspan>
-    <tspan x="15" y="350">*+##+++*%%%@@@@@@@@@@%:-%@*#*%##*+-</tspan>
-    <tspan x="15" y="360">+++**+%*#@%%@@@@@@@@@=+-%@#**%#*++-</tspan>
-    <tspan x="15" y="370">*++**%*###@@@@@@@@@@@+*-%@%##%#++=-</tspan>
-    <tspan x="15" y="380">##+**#%##%%%%@@@@@##**+-#%*#%#*+++=</tspan>
-    <tspan x="15" y="390">%*@**#%%@#%%@@@@@@@#+*#.=+*#%#++++=</tspan>
-    <tspan x="15" y="400">%%#*###@%%%@@@@@@@@+*++.:+=+##++++=</tspan>
-    <tspan x="15" y="410">@%@%##%%%@%%%@%@@@%+*#*.::=+#**+++=</tspan>
-    <tspan x="15" y="420">@@@@@@%%@%%%@@@@@@#*#%=.=--+*#*++++</tspan>
-    <tspan x="15" y="430">@@@@@@@@@@@%@%%@%%*#+@*----+*#*++++</tspan>
-    <tspan x="15" y="440">@@@@@@@@@@@%%%%@%@%#=**::--+*#**+++</tspan>
-    <tspan x="15" y="450">@@@@@@@@@@@%%@@@@@%#=**--=-=*%#*+++</tspan>
-    <tspan x="15" y="460">@@@@@@@@@@@@%@@%@*@#**#=--=+#%#*+++</tspan>
-    <tspan x="15" y="470">@@@@@@@@@@@@@%@%%*@%**%+--=**%#*++*</tspan>
-    <tspan x="15" y="480">@@@@@@@@@@@%@%%@%%@@#%#%-=+**##****</tspan>
-    <tspan x="15" y="490">@@@@@@@@@@@%@@@@%%@@*##@*==+*#%****</tspan>
-    <tspan x="15" y="500">@@@@@@@@@@@@@@%@%@@##%#%*=+**%%#***</tspan>
-    <tspan x="15" y="510">%@@@@@@@@@@@@@@@@#=@%@%@@=+**%%#+**</tspan>
-    <tspan x="15" y="520">@@@@@@@@@@@@@@@*@%#@%%%@*@+**%%#***</tspan>
-</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+<rect width="900" height="500" fill="#ffffff" rx="12"/>
+<rect x="2" y="2" width="896" height="496" fill="none" stroke="#d0d7de" stroke-width="2" rx="10"/>
 
 <!-- Header -->
-<text class="header" x="380" y="45">Mohammad Sadegh Sirjani</text>
-<line x1="380" y1="55" x2="920" y2="55" class="divider"/>
+<text x="30" y="45" fill="#0969da" font-size="28" font-weight="700" font-family="monospace">
+Mohammad Sadegh Sirjani
+</text>
+<line x1="30" y1="60" x2="870" y2="60" stroke="#d8dee4" stroke-width="2"/>
 
-<!-- Profile Section -->
-<text x="380" y="85" fill="#24292e" font-size="15">
-    <tspan x="380" y="85"><tspan class="keyColor">⏱  Uptime</tspan>     <tspan class="valueColor">25 years, 2 months, 17 days</tspan></tspan>
-    <tspan x="380" y="105"><tspan class="keyColor">🌍 Made In</tspan>     <tspan class="valueColor">Iran</tspan></tspan>
-    <tspan x="380" y="125"><tspan class="keyColor">📍 Location</tspan>    <tspan class="valueColor">San Antonio, Texas, USA</tspan></tspan>
-    <tspan x="380" y="145"><tspan class="keyColor">🎓 University</tspan>  <tspan class="valueColor">University of Texas at San Antonio</tspan></tspan>
-    <tspan x="380" y="165"><tspan class="keyColor">💻 Major</tspan>       <tspan class="valueColor">Computer Science</tspan></tspan>
-    <tspan x="380" y="185"><tspan class="keyColor">🖥  OS</tspan>         <tspan class="valueColor">MacOS • Ubuntu • Windows</tspan></tspan>
+<!-- Profile -->
+<g fill="#24292f" font-size="14" font-family="monospace">
+<text x="50" y="95">
+<tspan fill="#cf222e" font-weight="600">⏱  Uptime:</tspan>
+<tspan fill="#0969da" dx="10">25 years, 5 months, 10 days</tspan>
 </text>
 
-<!-- Languages Section -->
-<line x1="380" y1="200" x2="920" y2="200" class="divider"/>
-<text x="380" y="225" class="section-title">💬 Languages</text>
-<text x="380" y="250" fill="#24292e" font-size="14">
-    <tspan x="395" y="250"><tspan class="keyColor">code</tspan>  <tspan class="valueColor">C# • Python • C • C++</tspan></tspan>
-    <tspan x="395" y="270"><tspan class="keyColor">real</tspan>  <tspan class="valueColor">English • Persian</tspan></tspan>
+<text x="50" y="125">
+<tspan fill="#cf222e" font-weight="600">🌍 Origin:</tspan>
+<tspan fill="#0969da" dx="17">Iran</tspan>
 </text>
 
-<!-- Hobbies Section -->
-<line x1="380" y1="285" x2="920" y2="285" class="divider"/>
-<text x="380" y="310" class="section-title">🎯 Interests</text>
-<text x="380" y="335" fill="#24292e" font-size="14">
-    <tspan x="395" y="335"><tspan class="keyColor">software</tspan>  <tspan class="valueColor">Problem Solving • Learning New Skills</tspan></tspan>
-    <tspan x="395" y="355"><tspan class="keyColor">hardware</tspan>  <tspan class="valueColor">Dark Soulsing • Working Out</tspan></tspan>
+<text x="50" y="155">
+<tspan fill="#cf222e" font-weight="600">📍 Location:</tspan>
+<tspan fill="#0969da" dx="6">San Antonio, Texas, USA</tspan>
 </text>
 
-<!-- Contact Section -->
-<line x1="380" y1="370" x2="920" y2="370" class="divider"/>
-<text x="380" y="395" class="section-title">📬 Connect</text>
-<text x="380" y="420" fill="#24292e" font-size="14">
-    <tspan x="395" y="420"><tspan class="keyColor">✉  email</tspan>     <tspan class="valueColor">mohammadsadegh.sirjani@utsa.edu</tspan></tspan>
-    <tspan x="395" y="440"><tspan class="keyColor">💼 linkedin</tspan>   <tspan class="valueColor">Mohammad Sadegh Sirjani</tspan></tspan>
-    <tspan x="395" y="460"><tspan class="keyColor">🌐 website</tspan>    <tspan class="valueColor">msadeqsirjani.com</tspan></tspan>
+<text x="50" y="185">
+<tspan fill="#cf222e" font-weight="600">🎓 University:</tspan>
+<tspan fill="#0969da" dx="0">University of Texas at San Antonio</tspan>
 </text>
 
-<!-- GitHub Stats -->
-<line x1="380" y1="475" x2="920" y2="475" class="divider"/>
-<text x="380" y="500" class="section-title">📊 GitHub Stats</text>
-<text x="380" y="525" fill="#24292e" font-size="13">
-    <tspan x="395" y="525"><tspan class="highlightColor">★ 158</tspan> stars  •  <tspan class="accentText">106</tspan> repos  •  <tspan class="valueColor">2,987</tspan> commits  •  <tspan class="keyColor">36</tspan> followers  •  <tspan class="commentColor">4.3M</tspan> lines</tspan>
+<text x="50" y="215">
+<tspan fill="#cf222e" font-weight="600">💻 Major:</tspan>
+<tspan fill="#0969da" dx="21">Computer Science</tspan>
+</text>
+
+<text x="50" y="245">
+<tspan fill="#cf222e" font-weight="600">🖥  OS:</tspan>
+<tspan fill="#0969da" dx="36">macOS • Ubuntu • Windows</tspan>
+</text>
+</g>
+
+<line x1="30" y1="270" x2="870" y2="270" stroke="#d8dee4" stroke-width="2"/>
+
+<!-- Left Column -->
+<text x="50" y="305" fill="#d73a49" font-size="16" font-weight="700" font-family="monospace">
+💬 Languages
+</text>
+
+<g fill="#24292f" font-size="13" font-family="monospace">
+<text x="70" y="335">
+<tspan fill="#cf222e" font-weight="600">code:</tspan>
+<tspan fill="#0969da" dx="6">C# • Python • C • C++</tspan>
+</text>
+
+<text x="70" y="360">
+<tspan fill="#cf222e" font-weight="600">speak:</tspan>
+<tspan fill="#0969da" dx="6">English • Persian</tspan>
+</text>
+</g>
+
+<text x="50" y="400" fill="#d73a49" font-size="16" font-weight="700" font-family="monospace">
+🎯 Interests
+</text>
+
+<g fill="#24292f" font-size="13" font-family="monospace">
+<text x="70" y="430">
+<tspan fill="#cf222e" font-weight="600">software:</tspan>
+<tspan fill="#0969da" dx="6">Problem Solving</tspan>
+</text>
+
+<text x="70" y="455">
+<tspan fill="#cf222e" font-weight="600">hobbies:</tspan>
+<tspan fill="#0969da" dx="7">Dark Soulsing • Working Out</tspan>
+</text>
+</g>
+
+<!-- Right Column -->
+<text x="480" y="305" fill="#d73a49" font-size="16" font-weight="700" font-family="monospace">
+📬 Connect
+</text>
+
+<g fill="#24292f" font-size="13" font-family="monospace">
+<text x="500" y="335" fill="#cf222e" font-weight="600">✉  email:</text>
+<text x="510" y="355" fill="#0969da">mohammadsadegh.sirjani@utsa.edu</text>
+
+<text x="500" y="390" fill="#cf222e" font-weight="600">💼 linkedin:</text>
+<text x="510" y="410" fill="#0969da">Mohammad Sadegh Sirjani</text>
+
+<text x="500" y="445" fill="#cf222e" font-weight="600">🌐 website:</text>
+<text x="510" y="465" fill="#0969da">msadeqsirjani.com</text>
+</g>
+
+<!-- Footer -->
+<text x="30" y="488" fill="#24292f" opacity="0.5" font-size="10" font-family="monospace">
+Last updated: October 07, 2025
 </text>
 
 </svg>
