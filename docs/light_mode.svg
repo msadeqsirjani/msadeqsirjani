@@ -1,16 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="Andale Mono,AndaleMono,Consolas,monospace" width="975px" height="550px" font-size="16px">
+<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="'Fira Code', 'JetBrains Mono', 'Cascadia Code', Consolas, monospace" width="975px" height="550px" font-size="16px">
+<defs>
+  <linearGradient id="lightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#f6f8fa;stop-opacity:1" />
+  </linearGradient>
+  <linearGradient id="accentGlowLight" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#ff7f50;stop-opacity:0.4" />
+    <stop offset="100%" style="stop-color:#007acc;stop-opacity:0.4" />
+  </linearGradient>
+  <filter id="glowLight">
+    <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
 <style>
-.keyColor {fill: #ff7f50;}
-.valueColor {fill: #007acc;}
-.addColor {fill: #228b22;}
+.keyColor {fill: #d73a49; font-weight: 600;}
+.valueColor {fill: #0366d6;}
+.accentText {fill: #005cc5; font-weight: 700;}
+.highlightColor {fill: #28a745;}
 .delColor {fill: #d32f2f;}
-.commentColor {fill: #555555;}
+.commentColor {fill: #6a737d;}
 text, tspan {white-space: pre;}
+.header {font-size: 28px; font-weight: 700; fill: #0366d6; filter: url(#glowLight);}
+.section-title {font-size: 18px; font-weight: 700; fill: #d73a49;}
+.divider {stroke: #e1e4e8; stroke-width: 2; opacity: 0.7;}
 </style>
 
-<rect width="990px" height="530px" fill="#ffffff" rx="15"/>
+<rect width="975px" height="550px" fill="url(#lightBg)" rx="15"/>
+<rect x="5" y="5" width="965" height="540" fill="none" stroke="url(#accentGlowLight)" stroke-width="2" rx="13" opacity="0.5"/>
 
-<text x="15" y="30" fill="#c9d1d9" class="ascii">
+<text x="15" y="30" fill="#24292e" class="ascii">
     <tspan x="15" y="30">++====-=--+*=-----+**+-@%+--:-=#%**</tspan>
     <tspan x="15" y="40">======-=--=*+=---:=+:=---++:-=+#%**</tspan>
     <tspan x="15" y="50">=-=+==+=--+*+=-=:::*+*--=++:-+=#%#%</tspan>
@@ -63,32 +85,50 @@ text, tspan {white-space: pre;}
     <tspan x="15" y="520">@@@@@@@@@@@@@@@*@%#@%%%@*@+**%%#***</tspan>
 </text>
 
-<text x="370" y="30" fill="#333333">
-    <tspan x="370" y="30">Mohammad Sadegh Sirjani</tspan>
-    <tspan x="370" y="50">———————————————————————</tspan>
-    <tspan x="370" y="70" class="keyColor">Uptime</tspan>: <tspan class="valueColor">25 years, 2 months, 17 days</tspan>
-    <tspan x="370" y="90" class="keyColor">Made In</tspan>: <tspan class="valueColor">Iran</tspan>
-    <tspan x="370" y="110" class="keyColor">Location</tspan>: <tspan class="valueColor">San Antonio, Texas, USA</tspan>
-    <tspan x="370" y="130" class="keyColor">University</tspan>: <tspan class="valueColor">University of Texas at San Antonio</tspan>
-    <tspan x="370" y="150" class="keyColor">Major</tspan>: <tspan class="valueColor">Computer Science</tspan>
-    <tspan x="370" y="170" class="keyColor">OS</tspan>: <tspan class="valueColor">MacOS, Ubuntu, Windows</tspan>
-    
-    <tspan x="370" y="210" class="keyColor">Languages</tspan>.<tspan class="keyColor">Programming</tspan>: <tspan class="valueColor">C#, Python, C, C++</tspan>
-    <tspan x="370" y="230" class="keyColor">Languages</tspan>.<tspan class="keyColor">Real</tspan>: <tspan class="valueColor">English, Persian</tspan>
-    
-    <tspan x="370" y="270" class="keyColor">Hobbies</tspan>.<tspan class="keyColor">Software</tspan>: <tspan class="valueColor">Solving Problems, Learning New Skills</tspan>
-    <tspan x="370" y="290" class="keyColor">Hobbies</tspan>.<tspan class="keyColor">Hardware</tspan>: <tspan class="valueColor">Dark Soulsing, Working Out</tspan>
-    
-    <tspan x="370" y="330" class="keyColor">Contact</tspan>:
-    <tspan x="370" y="350">———————</tspan>
-    <tspan x="370" y="370" class="keyColor">Email</tspan>: <tspan class="valueColor">mohammadsadegh.sirjani@utsa.edu</tspan>
-    <tspan x="370" y="390" class="keyColor">LinkedIn</tspan>: <tspan class="valueColor">Mohammad Sadegh Sirjani</tspan>
-    <tspan x="370" y="410" class="keyColor">Website</tspan>: <tspan class="valueColor">msadeqsirjani.com</tspan>
+<!-- Header -->
+<text class="header" x="380" y="45">Mohammad Sadegh Sirjani</text>
+<line x1="380" y1="55" x2="920" y2="55" class="divider"/>
 
-    <tspan x="370" y="450" class="keyColor">GitHub Stats</tspan>:
-    <tspan x="370" y="470">————————————</tspan>
-    <tspan x="370" y="490" class="keyColor">Repos</tspan>: <tspan class="valueColor">106</tspan> {<tspan class="keyColor">Contributed</tspan>: <tspan class="valueColor">131</tspan>}  | <tspan class="keyColor">Commmits</tspan>: <tspan class="valueColor">2,987  </tspan>| <tspan class="keyColor">Stars</tspan>: <tspan class="valueColor">158</tspan>
-    <tspan x="370" y="510" class="keyColor">Followers</tspan>: <tspan class="valueColor">36  </tspan>| <tspan class="keyColor">Lines of Code</tspan>: <tspan class="valueColor">4,334,273</tspan>
+<!-- Profile Section -->
+<text x="380" y="85" fill="#24292e" font-size="15">
+    <tspan x="380" y="85"><tspan class="keyColor">⏱  Uptime</tspan>     <tspan class="valueColor">25 years, 2 months, 17 days</tspan></tspan>
+    <tspan x="380" y="105"><tspan class="keyColor">🌍 Made In</tspan>     <tspan class="valueColor">Iran</tspan></tspan>
+    <tspan x="380" y="125"><tspan class="keyColor">📍 Location</tspan>    <tspan class="valueColor">San Antonio, Texas, USA</tspan></tspan>
+    <tspan x="380" y="145"><tspan class="keyColor">🎓 University</tspan>  <tspan class="valueColor">University of Texas at San Antonio</tspan></tspan>
+    <tspan x="380" y="165"><tspan class="keyColor">💻 Major</tspan>       <tspan class="valueColor">Computer Science</tspan></tspan>
+    <tspan x="380" y="185"><tspan class="keyColor">🖥  OS</tspan>         <tspan class="valueColor">MacOS • Ubuntu • Windows</tspan></tspan>
+</text>
+
+<!-- Languages Section -->
+<line x1="380" y1="200" x2="920" y2="200" class="divider"/>
+<text x="380" y="225" class="section-title">💬 Languages</text>
+<text x="380" y="250" fill="#24292e" font-size="14">
+    <tspan x="395" y="250"><tspan class="keyColor">code</tspan>  <tspan class="valueColor">C# • Python • C • C++</tspan></tspan>
+    <tspan x="395" y="270"><tspan class="keyColor">real</tspan>  <tspan class="valueColor">English • Persian</tspan></tspan>
+</text>
+
+<!-- Hobbies Section -->
+<line x1="380" y1="285" x2="920" y2="285" class="divider"/>
+<text x="380" y="310" class="section-title">🎯 Interests</text>
+<text x="380" y="335" fill="#24292e" font-size="14">
+    <tspan x="395" y="335"><tspan class="keyColor">software</tspan>  <tspan class="valueColor">Problem Solving • Learning New Skills</tspan></tspan>
+    <tspan x="395" y="355"><tspan class="keyColor">hardware</tspan>  <tspan class="valueColor">Dark Soulsing • Working Out</tspan></tspan>
+</text>
+
+<!-- Contact Section -->
+<line x1="380" y1="370" x2="920" y2="370" class="divider"/>
+<text x="380" y="395" class="section-title">📬 Connect</text>
+<text x="380" y="420" fill="#24292e" font-size="14">
+    <tspan x="395" y="420"><tspan class="keyColor">✉  email</tspan>     <tspan class="valueColor">mohammadsadegh.sirjani@utsa.edu</tspan></tspan>
+    <tspan x="395" y="440"><tspan class="keyColor">💼 linkedin</tspan>   <tspan class="valueColor">Mohammad Sadegh Sirjani</tspan></tspan>
+    <tspan x="395" y="460"><tspan class="keyColor">🌐 website</tspan>    <tspan class="valueColor">msadeqsirjani.com</tspan></tspan>
+</text>
+
+<!-- GitHub Stats -->
+<line x1="380" y1="475" x2="920" y2="475" class="divider"/>
+<text x="380" y="500" class="section-title">📊 GitHub Stats</text>
+<text x="380" y="525" fill="#24292e" font-size="13">
+    <tspan x="395" y="525"><tspan class="highlightColor">★ 158</tspan> stars  •  <tspan class="accentText">106</tspan> repos  •  <tspan class="valueColor">2,987</tspan> commits  •  <tspan class="keyColor">36</tspan> followers  •  <tspan class="commentColor">4.3M</tspan> lines</tspan>
 </text>
 
 </svg>
