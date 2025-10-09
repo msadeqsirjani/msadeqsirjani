@@ -1,0 +1,49 @@
+name: Update Profile SVGs
+
+on:
+  schedule:
+    # Runs every day at 00:00 UTC (midnight)
+    - cron: '0 0 * * *'
+  
+  # Allows manual triggering from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-svgs:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Generate updated SVGs
+        run: python update_readme.py
+      
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add docs/*.svg
+          git commit -m "🤖 Auto-update profile SVGs [skip ci]"
+          git push
